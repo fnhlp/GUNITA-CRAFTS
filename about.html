@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUNITA DRAFT</title>
+     <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <img src="pfp.png" alt="Logo" class="logo">
+                <div class="navlink-wrapper">
+                    <a href="index.html" class="navlink">Home</a>
+                    <a href="about.html" class="navlink active">About</a>
+                    <a href="products.html" class="navlink">Products</a>
+                    <a href="contact.html" class="navlink">Contact</a>
+            </div>
+            </div>
+        </div>
+
+        <img src="love.png" alt="Logo" class="sidebar-logo" id="sidebarLogo">
+
+        <div class="sidebar sidebar-hidden" aria-hidden="true" id="sidebar">
+            <a href="index.html" class="side-link">Home</a>
+            <a href="about.html" class="side-link active">About</a>
+            <a href="products.html" class="side-link">Products</a>
+            <a href="contact.html" class="side-link">Contact</a>
+        </div>
+
+        <div class="about-gunita">
+        <img src="allclips.jpg" alt="About Image" class="about-image">
+            <h2>About GUNITA Crafts</h2>
+            <p><em>Gunita Crafts</em> was founded with the vision of turning simple memories into timeless keepsakes. Our name, “Gunita,” means memory or remembrance in Filipino—reflecting our passion for creating handmade pieces that celebrate life’s most meaningful moments.
+                   What started as a small passion project has now grown into a community-driven brand that values creativity, craftsmanship, and sustainability. Each product is thoughtfully designed and carefully crafted to inspire joy, nostalgia, and connection.</p>
+                <a href="about.html" class="custom-learn-more-btn button-text">
+                <div class="circle"></div>
+                <div class="arrow"></div>
+                </a>
+    </div>
+
+       <div class="team">
+        <h1>Meet the Makers</h1>
+        <p>Gunita Crafts is brought to life by three creative hearts—me, my twin sister, and our cousin. It all began when my twin made a simple fuzzy wire gift that sparked the idea of turning our shared love for crafting into something bigger.</p>
+            <div class="profile-cards">
+                 <div class="profile-card">
+                    <img src="fffff.jpg" alt="FIONNAH ELPA">
+                    <div class="name">FIONNAH ELPA</div>
+                    <div class="role">Designer</div>
+                    <div class="desc">The heart behind the designs, shaping ideas into handmade keepsakes.</div>
+                      </div>
+                <div class="profile-card">
+                    <img src="tif.jpg" alt="TIFFANY ELPA">
+                    <div class="name">TIFFANY ELPA</div>
+                    <div class="role">Visionary</div>
+                    <div class="desc">My partner in vision, always adding balance, detail, and a touch of soul.</div>
+                     </div>
+               <div class="profile-card">
+                    <img src="odeng.jpg" alt="JORDAYNE FUMAR">
+                    <div class="name">JORDAYNE FUMAR</div>
+                    <div class="role">Creative Spark</div>
+                    <div class="desc">Our spark of energy and creativity, bringing fresh ideas into the team.</div>
+                </div>
+              </div>
+       </div>
+            </nav>
+    
+           
+        <div class="fun-facts-card">
+           <img src="pfp.png" alt="Fun Facts">
+          <div class="fun-facts-content">
+        <div class="fun-facts-title">Fun Facts</div>
+             <ul class="fun-facts-list">
+              <li>We love crafting late at night with milk tea!</li>
+              <li>Our youngest member is the best at picking color combos.</li>
+              <li>We once made 30 keychains in a single night.</li>
+            </ul>
+          </div>
+        </div>
+
+           <div class="about-cards-row">
+              <div class="about-card">
+              <img src="mission.png" alt="Our Mission">
+              <h3>Our Mission</h3>
+              <p>At Gunita Crafts, we aim to create meaningful, handcrafted pieces that hold memories and stories worth cherishing.
+                 We are dedicated to turning simple materials into art that sparks joy and connection.
+                 Through every craft, we share not only creativity but also a part of ourselves with those who receive it.</p>
+             </div>
+           <div class="about-card">
+              <img src="vision.png" alt="Our Vision">
+              <h3>Our Vision</h3>
+              <p>We envision Gunita Crafts as a brand that inspires people to treasure the beauty of handmade creations in a fast-paced world.
+                 Our goal is to be a reminder that memories and heartfelt effort matter more than mass production.
+                 We dream of becoming a timeless space where art, love, and memory live on in every crafted piece.</p>
+            </div>
+           <div class="about-card">
+              <img src="value.png" alt="Our Values">
+              <h3>Our Values</h3>
+              <p>We value creativity that comes from the heart, making each piece unique and filled with meaning.
+                 We believe in sincerity and passion, putting genuine care into every step of our work.
+                 We stand for connection—between our hands, our crafts, and the people who hold them close.</p>
+            </div>
+         </div>
+
+         <div class="photo-gallery-section">
+            <h2>Behind the Scenes</h2>
+            <p class="gallery-desc">Take a peek at our creative process, fun moments, and the little joys of crafting together!</p>
+        <div class="gallery-grid">
+           <img src="craft1.jpg" alt="Crafting Session 1">
+           <img src="craft2.jpg" alt="Late Night Crafting">
+           <img src="craft3.jpg" alt="Materials Prep">
+           <img src="craft4.jpg" alt="Teamwork">
+       </div>
+     </div>
+     </div>
+
+     
+    <footer class="site-footer">
+    <div class="footer-text">&copy; 2025 Gunita Crafts. All rights reserved.
+        <p>Handmade with heart, crafted with meaning.</p>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        const sidebar = document.getElementById('sidebar');
+        const sidebarLogo = document.getElementById('sidebarLogo');
+        const closeBtn = document.getElementById('closeBtn');
+        const sideLinks = document.querySelectorAll('.side-link');
+
+        if (!sidebar || !sidebarLogo) return;
+
+        function openSidebar() {
+            sidebar.classList.remove('sidebar-hidden');
+            sidebar.classList.add('sidebar-visible');
+            sidebar.setAttribute('aria-hidden', 'false');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('sidebar-visible');
+            sidebar.classList.add('sidebar-hidden');
+            sidebar.setAttribute('aria-hidden', 'true');
+        }
+
+        sidebarLogo.addEventListener('click', function (e) {
+            const isHidden = sidebar.classList.contains('sidebar-hidden');
+            if (isHidden) {
+                openSidebar();
+            } else {
+                closeSidebar();
+            }
+        });
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function () {
+                closeSidebar();
+            });
+        }
+
+        sideLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                closeSidebar();
+            });
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeSidebar();
+            }
+        });
+
+    })();
+</script>
+
+
+</body>
+</html>
+    
